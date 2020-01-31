@@ -10,11 +10,11 @@ import { equal } from 'assert';
 
 import { CreditCardType } from '../../src/fake/CreditCardType';
 import checkCreditCard from '../../src/check/checkCreditCard';
-import creditCard from '../../src/fake/creditCard';
+import fakeCreditCard from '../../src/fake/fakeCreditCard';
 
 describe('Generate credit card number', () => {
     it('American Express card', () => {
-        const result = creditCard(CreditCardType.AmericanExpress);
+        const result = fakeCreditCard(CreditCardType.AmericanExpress);
         const cardType = checkCreditCard(result);
 
         equal(cardType, CreditCardType.AmericanExpress);
