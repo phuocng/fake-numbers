@@ -28,7 +28,7 @@ const creditCard = (type: CreditCardType): string => {
     const cardNumber = `${prefix}${Array(length - prefixLength - 1).fill(0).map((_, __) => randomFromRange(0, 9)).join('')}`;
     const reversed = cardNumber.split('').map((c) => parseInt(c, 10)).reverse();
     const finalDigit = luhn(reversed, DoublePosition.Even);
-    
+
     return `${cardNumber}${finalDigit}`;
 };
 

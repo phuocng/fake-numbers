@@ -6,7 +6,7 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-function randomFromArray<T>(array: Array<T>): T {
+function randomFromArray<T>(array: T[]): T {
     return array[Math.floor(Math.random() * array.length)];
 };
 

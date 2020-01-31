@@ -15,7 +15,7 @@ const luhn = (input: number[], doublePosition: DoublePosition): number => {
     const total = input.length;
 
     const transformed = Array(total).fill(0).map((_, index) => {
-        if (doublePosition === DoublePosition.Even && index % 2 === 0 || 
+        if (doublePosition === DoublePosition.Even && index % 2 === 0 ||
             doublePosition === DoublePosition.Old && index % 2 === 1) {
             const double = input[index] * 2;
             return (double > 9) ? double - 9 : double;
