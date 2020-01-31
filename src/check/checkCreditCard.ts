@@ -1,5 +1,5 @@
 /**
- * Generate a fake and valid numbers
+ * Generate fake and valid numbers
  *
  * @see https://fakenumbers.io
  * @license https://fakenumbers.io/license
