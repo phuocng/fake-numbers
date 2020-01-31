@@ -1,0 +1,37 @@
+{
+    "name": "@phuocng/fake-numbers",
+    "version": "1.0.0",
+    "description": "Generate a fake and valid numbers",
+    "license": "https://fakenumbers.io/license",
+    "author": {
+        "name": "Nguyen Huu Phuoc",
+        "email": "me@phuoc.ng",
+        "url": "https://twitter.com/nghuuphuoc"
+    },
+    "homepage": "https://fakenumbers.io",
+    "keywords": [
+        "fake number",
+        "random number"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/phuoc-ng/fake-numbers"
+    },
+    "bugs": {
+        "url": "https://github.com/phuoc-ng/fake-numbers/issues"
+    },
+    "scripts": {
+        "lint": "tslint -c tslint.json -o tslint.log -t prose 'src/**/*.ts' 'test/**/*.ts'",
+        "test": "mocha --no-opts",
+        "typecheck": "tsc --noEmit --watch"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.2.8",
+        "@types/mocha": "^7.0.1",
+        "chai": "^4.2.0",
+        "mocha": "^7.0.1",
+        "ts-node": "^8.6.2",
+        "tslint": "^6.0.0",
+        "typescript": "^3.7.5"
+    }
+}
