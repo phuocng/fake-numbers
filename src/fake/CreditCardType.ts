@@ -59,7 +59,9 @@ export const CreditCardMap: Map<CreditCardType, CreditCardFormat> = new Map([
         CreditCardType.Maestro,
         {
             length: [12, 13, 14, 15, 16, 17, 18, 19],
-            prefix: ['5018', '5020', '5038', '5868', '6304', '6759', '6761', '6762', '6763', '6764', '6765', '6766'],
+            prefix: [
+                '5018', '5020', '5038', '5868', '6304', '6759', '6761', '6762', '6763', '6764', '6765', '6766',
+            ],
         }
     ],
     [

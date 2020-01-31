@@ -9,9 +9,9 @@
 import { CreditCardMap, CreditCardType } from '../fake/CreditCardType';
 import luhn, { DoublePosition } from '../utils/luhn';
 
-const checkCreditCard = (input: string): CreditCardType | null => {
+const checkCreditCard = (input: string): CreditCardType[] => {
     if (!/^\d+$/.test(input)) {
-        return null;
+        return [];
     }
 
     const converted = input.split('').map((c) => parseInt(c, 10));
@@ -19,11 +19,12 @@ const checkCreditCard = (input: string): CreditCardType | null => {
 
     const isValid = luhn(converted.reverse(), DoublePosition.Even) === checkDigit;
     if (!isValid) {
-        return null;
+        return [];
     }
 
+    const match = [];
     for (const tpe of Object.keys(CreditCardType)) {
-        const cardType = CreditCardType[tpe];
+        const cardType: CreditCardType = CreditCardType[tpe];
         if (!CreditCardMap.has(cardType)) {
             continue;
         }
@@ -33,12 +34,12 @@ const checkCreditCard = (input: string): CreditCardType | null => {
         for (const i in cardFormat.prefix) {
             // Check the prefix and length
             if (input.substr(0, prefix[i].length) === prefix[i] && length.indexOf(input.length) !== -1) {
-                return cardType;
+                match.push(cardType);
             }
         }
     }
 
-    return null;
+    return match;
 };
 
 export default checkCreditCard;
