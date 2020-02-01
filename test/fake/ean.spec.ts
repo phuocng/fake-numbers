@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
+import checkEan from '../../src/check/checkEan';
 import fakeEan from '../../src/fake/fakeEan';
 
 describe('Generate EAN number', () => {
     it('EAN number', () => {
         const result = fakeEan();
-        console.log(result);
-
-        // expect(cardType).to.include(CreditCardType.AmericanExpress);
+        expect(checkEan(result)).to.be.true;
     });
 });
