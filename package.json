@@ -21,7 +21,7 @@
         "url": "https://github.com/phuoc-ng/fake-numbers/issues"
     },
     "scripts": {
-        "lint": "tslint -c tslint.json -o tslint.log -t prose 'src/**/*.ts' 'test/**/*.ts'",
+        "lint": "tslint -c tslint.json -o tslint.log -t prose 'src/**/*.ts'",
         "test": "mocha --no-opts",
         "typecheck": "tsc --noEmit --watch"
     },
