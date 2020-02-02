@@ -1,5 +1,5 @@
 # Fake Numbers
-Generate a fake and valid numbers.
+Generate fake and valid numbers.
 
 ~~~ javascript
 // Generate a fake credit card number
