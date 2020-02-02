@@ -19,6 +19,7 @@ check(creditCardNumber).valid;      // true
 * [x] 03. EAN (International Article Number)
 * [x] 04. IMEI (International Mobile Equipment Identity)
 * [x] 05. IMO (International Maritime Organization)
+* [x] 06. ISBN (International Standard Book Number)
 
 ## Command
 
@@ -35,7 +36,8 @@ You might be interesting in my projects:
 
 | Product                                           | Description                                                       |
 |---------------------------------------------------|-------------------------------------------------------------------|
-| [BlurPage](https://blur.page)                     | A browser extension to hide sensitive information on a web page   |
+| [Blur Page](https://blur.page)                    | A browser extension to hide sensitive information on a web page   |
 | [CSS Layout](https://csslayout.io)                | A collection of popular layouts and patterns made with CSS        |
+| [Fake Numbers](https://fakenumbers.io)            | Generate fake and valid numbers                                   |
 | [FormValidation](https://formvalidation.io)       | The best validation library for JavaScript                        |
 | [React PDF Viewer](https://react-pdf-viewer.dev)  | A React component to view a PDF document                          |
