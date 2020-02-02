@@ -13,7 +13,8 @@ import fake from '../src/imo/fake';
 
 describe('Generate IMO number', () => {
     it('IMO number', () => {
-        const result = fake();
-        expect(check(result).valid).to.be.true;
+        const number = fake();
+        const result = check(number);
+        expect(result.valid).to.be.true;
     });
 });

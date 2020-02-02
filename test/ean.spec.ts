@@ -13,7 +13,8 @@ import fake from '../src/ean/fake';
 
 describe('Generate EAN number', () => {
     it('EAN number', () => {
-        const result = fake();
-        expect(check(result).valid).to.be.true;
+        const number = fake();
+        const result = check(number);
+        expect(result.valid).to.be.true;
     });
 });

@@ -14,114 +14,114 @@ import fake from '../src/creditCard/fake';
 
 describe('Generate credit card number', () => {
     it('American Express card', () => {
-        const result = fake(CreditCardType.AmericanExpress);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.AmericanExpress);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.AmericanExpress);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.AmericanExpress);
     });
 
     it('Discover card', () => {
-        const result = fake(CreditCardType.Discover);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Discover);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Discover);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Discover);
     });
 
     it('Jcb card', () => {
-        const result = fake(CreditCardType.Jcb);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Jcb);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Jcb);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Jcb);
     });
 
     it('Maestro card', () => {
-        const result = fake(CreditCardType.Maestro);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Maestro);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Maestro);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Maestro);
     });
 
     it('Master card', () => {
-        const result = fake(CreditCardType.Master);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Master);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Master);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Master);
     });
 
     it('Visa card', () => {
-        const result = fake(CreditCardType.Visa);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Visa);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Visa);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Visa);
     });
 
     it('Dankort card', () => {
-        const result = fake(CreditCardType.Dankort);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Dankort);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Dankort);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Dankort);
     });
 
     it('Dinner Club card', () => {
-        const result = fake(CreditCardType.DinnerClub);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.DinnerClub);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.DinnerClub);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.DinnerClub);
     });
 
     it('Dinner Club US card', () => {
-        const result = fake(CreditCardType.DinnerClubUs);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.DinnerClubUs);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.DinnerClubUs);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.DinnerClubUs);
     });
 
     it('Forbrugsforeningen card', () => {
-        const result = fake(CreditCardType.Forbrugsforeningen);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Forbrugsforeningen);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Forbrugsforeningen);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Forbrugsforeningen);
     });
 
     it('Laser card', () => {
-        const result = fake(CreditCardType.Laser);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Laser);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Laser);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Laser);
     });
 
     it('Solo card', () => {
-        const result = fake(CreditCardType.Solo);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.Solo);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.Solo);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.Solo);
     });
 
     it('Union Pay card', () => {
-        const result = fake(CreditCardType.UnionPay);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.UnionPay);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.UnionPay);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.UnionPay);
     });
 
     it('Visa Electron card', () => {
-        const result = fake(CreditCardType.VisaElectron);
-        const checkResult = check(result);
+        const number = fake(CreditCardType.VisaElectron);
+        const result = check(number);
 
-        expect(checkResult.valid).to.be.true;
-        expect(checkResult.meta).to.include(CreditCardType.VisaElectron);
+        expect(result.valid).to.be.true;
+        expect(result.meta).to.include(CreditCardType.VisaElectron);
     });
 });

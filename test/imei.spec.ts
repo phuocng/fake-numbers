@@ -13,7 +13,8 @@ import fake from '../src/imei/fake';
 
 describe('Generate IMEI number', () => {
     it('IMEI number', () => {
-        const result = fake();
-        expect(check(result).valid).to.be.true;
+        const number = fake();
+        const result = check(number);
+        expect(result.valid).to.be.true;
     });
 });
