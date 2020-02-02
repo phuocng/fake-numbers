@@ -25,10 +25,11 @@ check(creditCardNumber).valid;      // true
 * [x] 09. ISSN (_International Standard Serial Number_)
 * [x] 10. NPI (_National Provider Identifier_)
 * [x] 11. NRIC (_Singaporean National Registration Identity Card_)
-* [x] 11. RTN (_Routing Transit Number_)
-* [x] 12. SEDOL (_Stock Exchange Daily Official List_)
-* [x] 13. SIN (_Canadian Social Insurance Number_)
-* [x] 14. VIN (_Vehicle Identification Number_): Support US only
+* [x] 12. RTN (_Routing Transit Number_)
+* [x] 13. SEDOL (_Stock Exchange Daily Official List_)
+* [x] 14. SIN (_Canadian Social Insurance Number_)
+* [x] 15. SSN (_Social Security number_)
+* [x] 16. VIN (_Vehicle Identification Number_): Support US only
 
 ## Command
 
