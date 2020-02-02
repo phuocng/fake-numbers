@@ -24,6 +24,7 @@ check(creditCardNumber).valid;      // true
 * [x] 08. ISMN (_International Standard Music Number_)
 * [x] 09. ISSN (_International Standard Serial Number_)
 * [x] 10. NPI (_National Provider Identifier_)
+* [x] 11. NRIC (_Singaporean National Registration Identity Card_)
 * [x] 11. RTN (_Routing Transit Number_)
 * [x] 12. SEDOL (_Stock Exchange Daily Official List_)
 * [x] 13. SIN (_Canadian Social Insurance Number_)
