@@ -6,7 +6,7 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-const checkEan = (input: string): boolean => {
+const check = (input: string): boolean => {
     if (!/^(\d{8}|\d{12}|\d{13}|\d{14})$/.test(input)) {
         return false;
     }
@@ -22,4 +22,4 @@ const checkEan = (input: string): boolean => {
     return `${checkDigit}` === input.charAt(length - 1);
 };
 
-export default checkEan;
+export default check;

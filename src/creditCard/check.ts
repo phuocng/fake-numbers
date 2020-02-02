@@ -6,10 +6,10 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-import { CreditCardMap, CreditCardType } from '../fake/CreditCardType';
+import { CreditCardMap, CreditCardType } from './CreditCardType';
 import luhn, { DoublePosition } from '../utils/luhn';
 
-const checkCreditCard = (input: string): CreditCardType[] => {
+const check = (input: string): CreditCardType[] => {
     if (!/^\d+$/.test(input)) {
         return [];
     }
@@ -42,4 +42,4 @@ const checkCreditCard = (input: string): CreditCardType[] => {
     return match;
 };
 
-export default checkCreditCard;
+export default check;

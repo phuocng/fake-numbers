@@ -8,12 +8,12 @@
 
 import { expect } from 'chai';
 
-import checkEan from '../../src/check/checkEan';
-import fakeEan from '../../src/fake/fakeEan';
+import check from '../src/ean/check';
+import fake from '../src/ean/fake';
 
 describe('Generate EAN number', () => {
     it('EAN number', () => {
-        const result = fakeEan();
-        expect(checkEan(result)).to.be.true;
+        const result = fake();
+        expect(check(result)).to.be.true;
     });
 });
