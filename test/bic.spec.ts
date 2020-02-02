@@ -13,7 +13,8 @@ import fake from '../src/bic/fake';
 
 describe('Generate BIC number', () => {
     it('BIC number', () => {
-        const result = fake();
-        expect(check(result).valid).to.be.true;
+        const number = fake();
+        const result = check(number);
+        expect(result.valid).to.be.true;
     });
 });
