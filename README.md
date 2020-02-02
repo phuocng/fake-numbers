@@ -18,6 +18,7 @@ check(creditCardNumber).valid;      // true
 * [x] 02. Credit card number
 * [x] 03. EAN (International Article Number)
 * [x] 04. IMEI (International Mobile Equipment Identity)
+* [x] 05. IMO (International Maritime Organization)
 
 ## Command
 
