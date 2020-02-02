@@ -6,7 +6,7 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-export default interface CheckResult {
+export default interface CheckResult<T> {
     valid: boolean;
-    meta?: any;
+    meta?: T;
 }

@@ -14,6 +14,6 @@ import fake from '../src/ean/fake';
 describe('Generate EAN number', () => {
     it('EAN number', () => {
         const result = fake();
-        expect(check(result)).to.be.true;
+        expect(check(result).valid).to.be.true;
     });
 });
