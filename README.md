@@ -14,15 +14,16 @@ check(creditCardNumber).valid;      // true
 
 ## Supported numbers
 
-* [x] 01. BIC (Business Identifier Code)
+* [x] 01. BIC (_Business Identifier Code_)
 * [x] 02. Credit card number
-* [x] 03. EAN (International Article Number)
-* [x] 04. IMEI (International Mobile Equipment Identity)
-* [x] 05. IMO (International Maritime Organization)
-* [x] 06. ISBN (International Standard Book Number)
-* [x] 07. ISIN (International Securities Identification Number)
-* [x] 08. ISMN (International Standard Music Number)
-* [x] 09. VIN (Vehicle Identification Number): Support US only
+* [x] 03. EAN (_International Article Number_)
+* [x] 04. IMEI (_International Mobile Equipment Identity_)
+* [x] 05. IMO (_International Maritime Organization_)
+* [x] 06. ISBN (_International Standard Book Number_)
+* [x] 07. ISIN (_International Securities Identification Number_)
+* [x] 08. ISMN (_International Standard Music Number_)
+* [x] 09. ISSN (_International Standard Serial Number_)
+* [x] 10. VIN (_Vehicle Identification Number_): Support US only
 
 ## Command
 
