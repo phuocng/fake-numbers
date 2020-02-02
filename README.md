@@ -25,7 +25,8 @@ check(creditCardNumber).valid;      // true
 * [x] 09. ISSN (_International Standard Serial Number_)
 * [x] 10. RTN (_Routing Transit Number_)
 * [x] 11. SEDOL (_Stock Exchange Daily Official List_)
-* [x] 12. VIN (_Vehicle Identification Number_): Support US only
+* [x] 12. SIN (_Canadian Social Insurance Number_)
+* [x] 13. VIN (_Vehicle Identification Number_): Support US only
 
 ## Command
 
