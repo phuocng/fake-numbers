@@ -13,6 +13,12 @@ import fake from '../src/isbn/fake';
 import IsbnType from '../src/isbn/IsbnType';
 
 describe('Generate ISBN number', () => {
+    it('ISBN number', () => {
+        const number = fake();
+        const result = check(number);
+        expect(result.valid).to.be.true;
+    });
+
     it('ISBN 10 number', () => {
         const number = fake(IsbnType.Isbn10);
         const result = check(number);
