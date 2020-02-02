@@ -9,7 +9,7 @@ const creditCardNumber = fake();
 
 // Check if a given value is a valid credit card nunber
 import check from './src/creditCard/check';
-check(creditCardNumber);
+check(creditCardNumber).valid;      // true
 ~~~
 
 ## Supported numbers
@@ -17,6 +17,7 @@ check(creditCardNumber);
 * [x] 01. BIC (Business Identifier Code)
 * [x] 02. Credit card number
 * [x] 03. EAN (International Article Number)
+* [x] 04. IMEI (International Mobile Equipment Identity)
 
 ## Command
 
