@@ -1,21 +1,22 @@
 # Fake Numbers
-Generate a fake and valid numbers.
+Generate fake and valid numbers.
 
 ~~~ javascript
 // Generate a fake credit card number
-import { fakeCreditCard } from './src/fake/fakeCreditCard.ts';
+import fake from './src/creditCard/fake';
 
-const creditCardNumber = fakeCreditCard();
+const creditCardNumber = fake();
 
 // Check if a given value is a valid credit card nunber
-import { checkCreditCard } from './src/check/checkCreditCard.ts';
-checkCreditCard(creditCardNumber);
+import check from './src/creditCard/check';
+check(creditCardNumber);
 ~~~
 
 ## Supported numbers
 
-* [x] 1. Credit card number
-* [x] 2. EAN
+* [x] 01. BIC (Business Identifier Code)
+* [x] 02. Credit card number
+* [x] 03. EAN (International Article Number)
 
 ## Command
 

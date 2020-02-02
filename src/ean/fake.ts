@@ -9,7 +9,7 @@
 import randomFromArray from '../utils/randomFromArray';
 import randomNumbers from '../utils/randomNumbers';
 
-const fakeEan = (): string => {
+const fake = (): string => {
     // It has to be a number with 8, 12 or 13 digits
     const numDigits = randomFromArray([8, 12, 13]) - 1;
     const partial = randomNumbers(numDigits);
@@ -24,4 +24,4 @@ const fakeEan = (): string => {
     return `${partial.join('')}${checkDigit}`;
 };
 
-export default fakeEan;
+export default fake;

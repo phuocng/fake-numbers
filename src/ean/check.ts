@@ -6,9 +6,11 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-const checkEan = (input: string): boolean => {
+import CheckResult from '../CheckResult';
+
+const check = (input: string): CheckResult<{}> => {
     if (!/^(\d{8}|\d{12}|\d{13}|\d{14})$/.test(input)) {
-        return false;
+        return { valid: false };
     }
 
     const length = input.length;
@@ -19,7 +21,9 @@ const checkEan = (input: string): boolean => {
         .reduce((a, b) => a + b, 0);
 
     const checkDigit = (10 - sum % 10) % 10;
-    return `${checkDigit}` === input.charAt(length - 1);
+    return {
+        valid: `${checkDigit}` === input.charAt(length - 1),
+    };
 };
 
-export default checkEan;
+export default check;

@@ -12,7 +12,7 @@ import randomFromRange from '../utils/randomFromRange';
 
 import { CreditCardMap, CreditCardType } from './CreditCardType';
 
-const fakeCreditCard = (type: CreditCardType): string => {
+const fake = (type: CreditCardType): string => {
     if (!CreditCardMap.has(type)) {
         return '';
     }
@@ -32,4 +32,4 @@ const fakeCreditCard = (type: CreditCardType): string => {
     return `${cardNumber}${finalDigit}`;
 };
 
-export default fakeCreditCard;
+export default fake;

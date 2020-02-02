@@ -6,12 +6,13 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-import { CreditCardMap, CreditCardType } from '../fake/CreditCardType';
+import CheckResult from '../CheckResult';
+import { CreditCardMap, CreditCardType } from './CreditCardType';
 import luhn, { DoublePosition } from '../utils/luhn';
 
-const checkCreditCard = (input: string): CreditCardType[] => {
+const check = (input: string): CheckResult<CreditCardType[]> => {
     if (!/^\d+$/.test(input)) {
-        return [];
+        return { valid: false, meta: [] };
     }
 
     const converted = input.split('').map((c) => parseInt(c, 10));
@@ -19,7 +20,7 @@ const checkCreditCard = (input: string): CreditCardType[] => {
 
     const isValid = luhn(converted.reverse(), DoublePosition.Even) === checkDigit;
     if (!isValid) {
-        return [];
+        return { valid: false, meta: [] };
     }
 
     const match = [];
@@ -39,7 +40,7 @@ const checkCreditCard = (input: string): CreditCardType[] => {
         }
     }
 
-    return match;
+    return { valid: true, meta: match };
 };
 
-export default checkCreditCard;
+export default check;
