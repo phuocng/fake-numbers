@@ -20,6 +20,7 @@ check(creditCardNumber).valid;      // true
 * [x] 04. IMEI (International Mobile Equipment Identity)
 * [x] 05. IMO (International Maritime Organization)
 * [x] 06. ISBN (International Standard Book Number)
+* [x] 07. VIN (Vehicle Identification Number): Support US only
 
 ## Command
 
