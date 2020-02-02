@@ -16,8 +16,9 @@ import IsbnType from './IsbnType';
  * @see https://en.wikipedia.org/wiki/International_Standard_Book_Number
  * @return string
  */
-const fake = (type: IsbnType): string => {
-    switch (type) {
+const fake = (type?: IsbnType): string => {
+    const tpe = type || randomFromArray([IsbnType.Isbn10, IsbnType.Isbn13]);
+    switch (tpe) {
         case IsbnType.Isbn10:
             return fakeIsbn10();
         case IsbnType.Isbn13:
