@@ -16,21 +16,22 @@ check(creditCardNumber).valid;      // true
 
 * [x] 01. BIC (_Business Identifier Code_)
 * [x] 02. Credit card number
-* [x] 03. CVV (_Card Verification Value_)
-* [x] 04. EAN (_International Article Number_)
-* [x] 05. IMEI (_International Mobile Equipment Identity_)
-* [x] 06. IMO (_International Maritime Organization_)
-* [x] 07. ISBN (_International Standard Book Number_)
-* [x] 08. ISIN (_International Securities Identification Number_)
-* [x] 09. ISMN (_International Standard Music Number_)
-* [x] 10. ISSN (_International Standard Serial Number_)
-* [x] 11. NPI (_National Provider Identifier_)
-* [x] 12. NRIC (_Singaporean National Registration Identity Card_)
-* [x] 13. RTN (_Routing Transit Number_)
-* [x] 14. SEDOL (_Stock Exchange Daily Official List_)
-* [x] 15. SIN (_Canadian Social Insurance Number_)
-* [x] 16. SSN (_Social Security number_)
-* [x] 17. VIN (_Vehicle Identification Number_): Support US only
+* [x] 03. CUSIP (_Committee on Uniform Security Identification Procedures_)
+* [x] 04. CVV (_Card Verification Value_)
+* [x] 05. EAN (_International Article Number_)
+* [x] 06. IMEI (_International Mobile Equipment Identity_)
+* [x] 07. IMO (_International Maritime Organization_)
+* [x] 08. ISBN (_International Standard Book Number_)
+* [x] 09. ISIN (_International Securities Identification Number_)
+* [x] 10. ISMN (_International Standard Music Number_)
+* [x] 11. ISSN (_International Standard Serial Number_)
+* [x] 12. NPI (_National Provider Identifier_)
+* [x] 13. NRIC (_Singaporean National Registration Identity Card_)
+* [x] 14. RTN (_Routing Transit Number_)
+* [x] 15. SEDOL (_Stock Exchange Daily Official List_)
+* [x] 16. SIN (_Canadian Social Insurance Number_)
+* [x] 17. SSN (_Social Security number_)
+* [x] 18. VIN (_Vehicle Identification Number_): Support US only
 
 ## Command
 
