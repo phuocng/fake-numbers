@@ -1,0 +1,31 @@
+{
+    "name": "@phuocng/fake-numbers",
+    "version": "1.0.0",
+    "description": "Generate a fake and valid numbers",
+    "license": "https://fakenumbers.io/license",
+    "author": {
+        "name": "Nguyen Huu Phuoc",
+        "email": "me@phuoc.ng",
+        "url": "https://twitter.com/nghuuphuoc"
+    },
+    "homepage": "https://fakenumbers.io",
+    "keywords": [
+        "fake number",
+        "random number"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/phuoc-ng/fake-numbers"
+    },
+    "bugs": {
+        "url": "https://github.com/phuoc-ng/fake-numbers/issues"
+    },
+    "files": [
+        "cjs/",
+        "umd/",
+        "index.d.ts",
+        "index.js",
+        "README.md"
+    ],
+    "main": "index.js"
+}

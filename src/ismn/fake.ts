@@ -17,7 +17,7 @@ import IsmnType from './IsmnType';
  * @return string
  */
 const fake = (type?: IsmnType): string => {
-    const tpe = (typeof type === undefined) ? randomFromArray([IsmnType.Ismn10, IsmnType.Ismn13]) : type;
+    const tpe = type || randomFromArray(Object.values(IsmnType));
 
     const digits = randomNumbers(8);
     const withPrefix = [9, 7, 9, 0].concat(digits);

@@ -8,27 +8,25 @@
 
 import { expect } from 'chai';
 
-import check from '../src/isbn/check';
-import fake from '../src/isbn/fake';
-import IsbnType from '../src/isbn/IsbnType';
+import { isbn, IsbnType } from '../src';
 
 describe('Generate ISBN number', () => {
     it('ISBN number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = isbn.fake();
+        const result = isbn.check(number);
         expect(result.valid).to.be.true;
     });
 
     it('ISBN 10 number', () => {
-        const number = fake(IsbnType.Isbn10);
-        const result = check(number);
+        const number = isbn.fake(IsbnType.Isbn10);
+        const result = isbn.check(number);
         expect(result.valid).to.be.true;
         expect(result.meta.type).to.equal(IsbnType.Isbn10);
     });
 
     it('ISBN 13 number', () => {
-        const number = fake(IsbnType.Isbn13);
-        const result = check(number);
+        const number = isbn.fake(IsbnType.Isbn13);
+        const result = isbn.check(number);
         expect(result.valid).to.be.true;
         expect(result.meta.type).to.equal(IsbnType.Isbn13);
     });

@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/issn/check';
-import fake from '../src/issn/fake';
+import { issn } from '../src';
 
 describe('Generate ISSN number', () => {
     it('ISSN number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = issn.fake();
+        const result = issn.check(number);
         expect(result.valid).to.be.true;
     });
 });

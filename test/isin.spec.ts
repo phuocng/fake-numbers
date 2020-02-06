@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/isin/check';
-import fake from '../src/isin/fake';
+import { isin } from '../src';
 
 describe('Generate ISIN number', () => {
     it('ISIN number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = isin.fake();
+        const result = isin.check(number);
         expect(result.valid).to.be.true;
     });
 });

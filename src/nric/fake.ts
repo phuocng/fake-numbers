@@ -9,9 +9,6 @@
 import randomFromArray from '../utils/randomFromArray';
 import randomNumbers from '../utils/randomNumbers';
 
-const CitizenCheck = 'JZIHGFEDCBA'.split('');
-const ForeignerCheck = 'XWUTRQPNMLK'.split('');
-
 /**
  * Generate a random NRIC (Singaporean National Registration Identity Card)
  *
@@ -19,6 +16,9 @@ const ForeignerCheck = 'XWUTRQPNMLK'.split('');
  * @return string
  */
 const fake = (): string => {
+    const citizenCheck = 'JZIHGFEDCBA'.split('');
+    const foreignerCheck = 'XWUTRQPNMLK'.split('');
+
     // The first character can be S, T, F or G
     const first = randomFromArray(['S', 'T', 'F', 'G']);
 
@@ -31,7 +31,7 @@ const fake = (): string => {
     const finalSum = (first === 'T' || first === 'G') ? sum + 4 : sum;
     const reminder = finalSum % 11;
 
-    const checkChar = (first === 'S' || first === 'T') ? CitizenCheck[reminder] : ForeignerCheck[reminder];
+    const checkChar = (first === 'S' || first === 'T') ? citizenCheck[reminder] : foreignerCheck[reminder];
 
     return `${first}${partial.join('')}${checkChar}`;
 };

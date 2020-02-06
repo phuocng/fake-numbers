@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/vin/check';
-import fake from '../src/vin/fake';
+import { vin } from '../src';
 
 describe('Generate VIN number', () => {
     it('VIN number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = vin.fake();
+        const result = vin.check(number);
         expect(result.valid).to.be.true;
     });
 });

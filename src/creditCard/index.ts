@@ -6,9 +6,9 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
-enum IsmnType {
-    Ismn10 = 'Ismn10',
-    Ismn13 = 'Ismn13',
-}
+import check from './check';
+import { CreditCardType } from './CreditCardType';
+import fake from './fake';
 
-export default IsmnType;
+export default { fake, check };
+export { CreditCardType };
