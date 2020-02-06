@@ -1,15 +1,16 @@
 # Fake Numbers
-Generate fake and valid numbers.
+Generate fake, valid numbers. Check if a given number is valid.
+
+The following piece of code generates a fake, valid credit card number.
 
 ~~~ javascript
-// Generate a fake credit card number
-import fake from './src/creditCard/fake';
+import { creditCard } from '@phuocng/fake-numbers';
 
-const creditCardNumber = fake();
+// Generate a fake credit card number
+const creditCardNumber = creditCard.fake();
 
 // Check if a given value is a valid credit card nunber
-import check from './src/creditCard/check';
-check(creditCardNumber).valid;      // true
+creditCard.check(creditCardNumber).valid;       // returns `true`
 ~~~
 
 ## Supported numbers
@@ -33,14 +34,6 @@ check(creditCardNumber).valid;      // true
 * [x] 17. SSN (_Social Security number_)
 * [x] 18. VIN (_Vehicle Identification Number_): Support US only
 
-## Command
-
-1. Running tests
-
-```
-$ npm run test
-```
-
 ## About
 
 This project is developed by [Nguyen Huu Phuoc](https://twitter.com/nghuuphuoc).
@@ -51,5 +44,5 @@ You might be interesting in my projects:
 | [Blur Page](https://blur.page)                    | A browser extension to hide sensitive information on a web page   |
 | [CSS Layout](https://csslayout.io)                | A collection of popular layouts and patterns made with CSS        |
 | [Fake Numbers](https://fakenumbers.io)            | Generate fake and valid numbers                                   |
-| [FormValidation](https://formvalidation.io)       | The best validation library for JavaScript                        |
+| [Form Validation](https://formvalidation.io)      | The best validation library for JavaScript                        |
 | [React PDF Viewer](https://react-pdf-viewer.dev)  | A React component to view a PDF document                          |
