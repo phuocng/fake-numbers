@@ -7,8 +7,8 @@
  */
 
 enum IsbnType {
-    Isbn10,
-    Isbn13,
+    Isbn10 = 'Isbn10',
+    Isbn13 = 'Isbn13',
 }
 
 export default IsbnType;

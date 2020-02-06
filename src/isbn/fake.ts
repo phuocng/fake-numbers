@@ -17,7 +17,7 @@ import IsbnType from './IsbnType';
  * @return string
  */
 const fake = (type?: IsbnType): string => {
-    const tpe = (typeof type === undefined) ? randomFromArray([IsbnType.Isbn10, IsbnType.Isbn13]) : type;
+    const tpe = type || randomFromArray(Object.values(IsbnType));
     switch (tpe) {
         case IsbnType.Isbn10:
             return fakeIsbn10();
