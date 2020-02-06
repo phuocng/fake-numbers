@@ -8,10 +8,10 @@
 
 import CheckResult from '../CheckResult';
 
-const CitizenCheck = 'JZIHGFEDCBA'.split('');
-const ForeignerCheck = 'XWUTRQPNMLK'.split('');
-
 const check = (input: string): CheckResult<{}> => {
+    const citizenCheck = 'JZIHGFEDCBA'.split('');
+    const foreignerCheck = 'XWUTRQPNMLK'.split('');
+
     if (!/^[STFG]\d{7}[A-Z]$/.test(input)) {
         return { valid: false };
     }
@@ -26,7 +26,7 @@ const check = (input: string): CheckResult<{}> => {
     const finalSum = (first === 'T' || first === 'G') ? sum + 4 : sum;
     const reminder = finalSum % 11;
 
-    const checkChar = (first === 'S' || first === 'T') ? CitizenCheck[reminder] : ForeignerCheck[reminder];
+    const checkChar = (first === 'S' || first === 'T') ? citizenCheck[reminder] : foreignerCheck[reminder];
 
     return { valid: checkChar === lastChar };
 };
