@@ -12,20 +12,20 @@ export interface CreditCardFormat {
 }
 
 export enum CreditCardType {
-    AmericanExpress,
-    Discover,
-    Jcb,
-    Maestro,
-    Master,
-    Visa,
-    Dankort,
-    DinnerClub,
-    DinnerClubUs,
-    Forbrugsforeningen,
-    Laser,
-    Solo,
-    UnionPay,
-    VisaElectron,
+    AmericanExpress = 'AmericanExpress',
+    Discover = 'Discover',
+    Jcb = 'Jcb',
+    Maestro = 'Maestro',
+    Master = 'Master',
+    Visa = 'Visa',
+    Dankort = 'Dankort',
+    DinnerClub = 'DinnerClub',
+    DinnerClubUs = 'DinnerClubUs',
+    Forbrugsforeningen = 'Forbrugsforeningen',
+    Laser = 'Laser',
+    Solo = 'Solo',
+    UnionPay = 'UnionPay',
+    VisaElectron = 'VisaElectron',
 }
 
 export const CreditCardMap: Map<CreditCardType, CreditCardFormat> = new Map([

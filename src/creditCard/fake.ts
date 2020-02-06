@@ -12,11 +12,12 @@ import randomFromRange from '../utils/randomFromRange';
 
 import { CreditCardMap, CreditCardType } from './CreditCardType';
 
-const fake = (type: CreditCardType): string => {
-    if (!CreditCardMap.has(type)) {
+const fake = (type?: CreditCardType): string => {
+    const tpe = type || randomFromArray(Object.values(CreditCardType));
+    if (!CreditCardMap.has(tpe)) {
         return '';
     }
-    const format = CreditCardMap.get(type);
+    const format = CreditCardMap.get(tpe);
     const length = randomFromArray(format.length);
     const prefix = randomFromArray(format.prefix);
     const prefixLength = prefix.length;

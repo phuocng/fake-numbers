@@ -11,6 +11,13 @@ import { expect } from 'chai';
 import { creditCard } from '../src';
 
 describe('Generate credit card number', () => {
+    it('Credit card', () => {
+        const number = creditCard.fake();
+        const result = creditCard.check(number);
+
+        expect(result.valid).to.be.true;
+    });
+
     it('American Express card', () => {
         const number = creditCard.fake(creditCard.CreditCardType.AmericanExpress);
         const result = creditCard.check(number);
