@@ -8,7 +8,7 @@
 
 import { expect } from 'chai';
 
-import { isbn } from '../src';
+import { isbn, IsbnType } from '../src';
 
 describe('Generate ISBN number', () => {
     it('ISBN number', () => {
@@ -18,16 +18,16 @@ describe('Generate ISBN number', () => {
     });
 
     it('ISBN 10 number', () => {
-        const number = isbn.fake(isbn.IsbnType.Isbn10);
+        const number = isbn.fake(IsbnType.Isbn10);
         const result = isbn.check(number);
         expect(result.valid).to.be.true;
-        expect(result.meta.type).to.equal(isbn.IsbnType.Isbn10);
+        expect(result.meta.type).to.equal(IsbnType.Isbn10);
     });
 
     it('ISBN 13 number', () => {
-        const number = isbn.fake(isbn.IsbnType.Isbn13);
+        const number = isbn.fake(IsbnType.Isbn13);
         const result = isbn.check(number);
         expect(result.valid).to.be.true;
-        expect(result.meta.type).to.equal(isbn.IsbnType.Isbn13);
+        expect(result.meta.type).to.equal(IsbnType.Isbn13);
     });
 });

@@ -7,15 +7,15 @@
  */
 
 import bic from './bic';
-import creditCard from './creditCard';
+import creditCard, { CreditCardType } from './creditCard';
 import cusip from './cusip';
 import cvv from './cvv';
 import ean from './ean';
 import imei from './imei';
 import imo from './imo';
-import isbn from './isbn';
+import isbn, { IsbnType } from './isbn';
 import isin from './isin';
-import ismn from './ismn';
+import ismn, { IsmnType } from './ismn';
 import issn from './issn';
 import npi from './npi';
 import nric from './nric';
@@ -27,15 +27,15 @@ import vin from './vin';
 
 export {
     bic,
-    creditCard,
+    creditCard, CreditCardType,
     cusip,
     cvv,
     ean,
     imei,
     imo,
-    isbn,
+    isbn, IsbnType,
     isin,
-    ismn,
+    ismn, IsmnType,
     issn,
     npi,
     nric,

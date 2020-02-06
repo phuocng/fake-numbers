@@ -10,4 +10,5 @@ import check from './check';
 import fake from './fake';
 import IsbnType from './IsbnType';
 
-export default { fake, check, IsbnType };
+export default { fake, check };
+export { IsbnType };

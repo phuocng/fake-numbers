@@ -10,4 +10,5 @@ import check from './check';
 import fake from './fake';
 import IsmnType from './IsmnType';
 
-export default { fake, check, IsmnType };
+export default { fake, check };
+export { IsmnType };
