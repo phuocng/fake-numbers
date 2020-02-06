@@ -7,8 +7,8 @@
  */
 
 enum IsmnType {
-    Ismn10,
-    Ismn13,
+    Ismn10 = 'Ismn10',
+    Ismn13 = 'Ismn13',
 }
 
 export default IsmnType;
