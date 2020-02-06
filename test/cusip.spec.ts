@@ -8,14 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/cusip/check';
-import fake from '../src/cusip/fake';
+import { cusip } from '../src';
 
 describe('Generate CUSIP number', () => {
     it('CUSIP number', () => {
-        const number = fake();
-        console.log(number);
-        const result = check(number);
+        const number = cusip.fake();
+        const result = cusip.check(number);
         expect(result.valid).to.be.true;
     });
 });

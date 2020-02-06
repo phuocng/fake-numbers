@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/bic/check';
-import fake from '../src/bic/fake';
+import { bic } from '../src';
 
 describe('Generate BIC number', () => {
     it('BIC number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = bic.fake();
+        const result = bic.check(number);
         expect(result.valid).to.be.true;
     });
 });

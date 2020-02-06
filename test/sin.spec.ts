@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/sin/check';
-import fake from '../src/sin/fake';
+import { sin } from '../src';
 
 describe('Generate SIN number', () => {
     it('SIN number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = sin.fake();
+        const result = sin.check(number);
         expect(result.valid).to.be.true;
     });
 });

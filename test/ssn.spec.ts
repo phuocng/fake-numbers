@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/ssn/check';
-import fake from '../src/ssn/fake';
+import { ssn } from '../src';
 
 describe('Generate SSN number', () => {
     it('SSN number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = ssn.fake();
+        const result = ssn.check(number);
         expect(result.valid).to.be.true;
     });
 });

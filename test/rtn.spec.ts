@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/rtn/check';
-import fake from '../src/rtn/fake';
+import { rtn } from '../src';
 
 describe('Generate RTN number', () => {
     it('RTN number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = rtn.fake();
+        const result = rtn.check(number);
         expect(result.valid).to.be.true;
     });
 });

@@ -8,13 +8,12 @@
 
 import { expect } from 'chai';
 
-import check from '../src/npi/check';
-import fake from '../src/npi/fake';
+import { npi } from '../src';
 
 describe('Generate NPI number', () => {
     it('NPI number', () => {
-        const number = fake();
-        const result = check(number);
+        const number = npi.fake();
+        const result = npi.check(number);
         expect(result.valid).to.be.true;
     });
 });
