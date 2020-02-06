@@ -1,6 +1,7 @@
 dist/cjs/*
 dist/umd/*
 dist/package-lock.json
+dist/LICENSE.md
 dist/README.md
 node_modules
 tslint.log

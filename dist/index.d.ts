@@ -6,3 +6,75 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
+export interface CheckResult<T> {
+    valid: boolean;
+    meta?: T;
+}
+
+export interface FakeCheck<C> {
+    fake(): string;
+    check(input: string): CheckResult<C>;
+}
+
+export type DefaultFakeCheck = FakeCheck<{}>;
+
+export interface FakeCheckWithType<F, C> {
+    fake(type?: F): string;
+    check(input: string): CheckResult<C>;
+}
+
+// -----------------
+// Supported numbers
+
+// BIC
+export const bic: DefaultFakeCheck;
+
+// Credit card
+export enum CreditCardType {
+    AmericanExpress = 'AmericanExpress',
+    Discover = 'Discover',
+    Jcb = 'Jcb',
+    Maestro = 'Maestro',
+    Master = 'Master',
+    Visa = 'Visa',
+    Dankort = 'Dankort',
+    DinnerClub = 'DinnerClub',
+    DinnerClubUs = 'DinnerClubUs',
+    Forbrugsforeningen = 'Forbrugsforeningen',
+    Laser = 'Laser',
+    Solo = 'Solo',
+    UnionPay = 'UnionPay',
+    VisaElectron = 'VisaElectron',
+}
+
+export const creditCard: FakeCheckWithType<CreditCardType, CreditCardType[]>;
+
+export const cusip: DefaultFakeCheck;
+export const cvv: DefaultFakeCheck;
+export const ean: DefaultFakeCheck;
+export const imei: DefaultFakeCheck;
+export const imo: DefaultFakeCheck;
+
+// ISBN
+export enum IsbnType {
+    Isbn10 = 'Isbn10',
+    Isbn13 = 'Isbn13',
+}
+export const isbn: FakeCheckWithType<IsbnType, {}>;
+
+export const isin: DefaultFakeCheck;
+
+export enum IsmnType {
+    Ismn10 = 'Ismn10',
+    Ismn13 = 'Ismn13',
+}
+export const ismn: FakeCheckWithType<IsmnType, {}>;
+
+export const issn: DefaultFakeCheck;
+export const npi: DefaultFakeCheck;
+export const nric: DefaultFakeCheck;
+export const rtn: DefaultFakeCheck;
+export const sedol: DefaultFakeCheck;
+export const sin: DefaultFakeCheck;
+export const ssn: DefaultFakeCheck;
+export const vin: DefaultFakeCheck;
