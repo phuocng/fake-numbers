@@ -11,7 +11,15 @@
     "homepage": "https://fakenumbers.io",
     "keywords": [
         "fake number",
-        "random number"
+        "random number",
+        "BIC",
+        "Credit card number", "CUSIP", "CVV",
+        "EAN",
+        "IMEI", "IMO", "ISBN", "ISMN", "ISSN",
+        "NPI", "NRIC",
+        "RTN",
+        "SEDOL", "SIN", "SSN",
+        "VIN"
     ],
     "repository": {
         "type": "git",
@@ -21,7 +29,7 @@
         "url": "https://github.com/phuoc-ng/fake-numbers/issues"
     },
     "scripts": {
-        "build": "rm -rf dist/cjs/* && rm -rf dist/umd/* && cp README.md dist && rollup -c",
+        "build": "rm -rf dist/cjs/* && rm -rf dist/umd/* && cp README.md dist && cp LICENSE.md dist && rollup -c",
         "lint": "tslint -c tslint.json -o tslint.log -t prose 'src/**/*.ts'",
         "test": "mocha --no-opts",
         "typecheck": "tsc --noEmit --watch"
