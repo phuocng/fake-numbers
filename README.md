@@ -31,8 +31,9 @@ creditCard.check(creditCardNumber).valid;       // returns `true`
 * [x] 14. RTN (_Routing Transit Number_)
 * [x] 15. SEDOL (_Stock Exchange Daily Official List_)
 * [x] 16. SIN (_Canadian Social Insurance Number_)
-* [x] 17. SSN (_Social Security number_)
-* [x] 18. VIN (_Vehicle Identification Number_): Support US only
+* [x] 17. SIREN
+* [x] 18. SSN (_Social Security number_)
+* [x] 19. VIN (_Vehicle Identification Number_): Support US only
 
 ## About
 

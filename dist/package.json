@@ -13,12 +13,22 @@
         "fake number",
         "random number",
         "BIC",
-        "Credit card number", "CUSIP", "CVV",
+        "Credit card number",
+        "CUSIP",
+        "CVV",
         "EAN",
-        "IMEI", "IMO", "ISBN", "ISMN", "ISSN",
-        "NPI", "NRIC",
+        "IMEI",
+        "IMO",
+        "ISBN",
+        "ISMN",
+        "ISSN",
+        "NPI",
+        "NRIC",
         "RTN",
-        "SEDOL", "SIN", "SSN",
+        "SEDOL",
+        "SIN",
+        "SIREN",
+        "SSN",
         "VIN"
     ],
     "repository": {
@@ -36,5 +46,7 @@
         "LICENSE.md",
         "README.md"
     ],
-    "main": "index.js"
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {}
 }

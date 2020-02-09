@@ -18,7 +18,7 @@
         "IMEI", "IMO", "ISBN", "ISMN", "ISSN",
         "NPI", "NRIC",
         "RTN",
-        "SEDOL", "SIN", "SSN",
+        "SEDOL", "SIN", "SIREN", "SSN",
         "VIN"
     ],
     "repository": {
