@@ -13,7 +13,7 @@
         "fake number",
         "random number",
         "BIC",
-        "Credit card number", "CUSIP", "CVV",
+        "CNPJ", "Credit card number", "CUSIP", "CVV",
         "EAN",
         "IMEI", "IMO", "ISBN", "ISMN", "ISSN",
         "NIF", "NPI", "NRIC",
