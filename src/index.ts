@@ -23,6 +23,7 @@ import rtn from './rtn';
 import sedol from './sedol';
 import sin from './sin';
 import siren from './siren';
+import siret from './siret';
 import ssn from './ssn';
 import vin from './vin';
 
@@ -44,6 +45,7 @@ export {
     sedol,
     sin,
     siren,
+    siret,
     ssn,
     vin,
 };

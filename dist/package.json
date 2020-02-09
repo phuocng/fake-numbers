@@ -28,6 +28,7 @@
         "SEDOL",
         "SIN",
         "SIREN",
+        "SIRET",
         "SSN",
         "VIN"
     ],

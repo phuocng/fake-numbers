@@ -76,5 +76,7 @@ export const nric: DefaultFakeCheck;
 export const rtn: DefaultFakeCheck;
 export const sedol: DefaultFakeCheck;
 export const sin: DefaultFakeCheck;
+export const siren: DefaultFakeCheck;
+export const siret: DefaultFakeCheck;
 export const ssn: DefaultFakeCheck;
 export const vin: DefaultFakeCheck;
