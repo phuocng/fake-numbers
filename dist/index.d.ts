@@ -71,6 +71,7 @@ export enum IsmnType {
 export const ismn: FakeCheckWithType<IsmnType, {}>;
 
 export const issn: DefaultFakeCheck;
+export const nif: DefaultFakeCheck;
 export const npi: DefaultFakeCheck;
 export const nric: DefaultFakeCheck;
 export const rtn: DefaultFakeCheck;

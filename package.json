@@ -16,7 +16,7 @@
         "Credit card number", "CUSIP", "CVV",
         "EAN",
         "IMEI", "IMO", "ISBN", "ISMN", "ISSN",
-        "NPI", "NRIC",
+        "NIF", "NPI", "NRIC",
         "RTN",
         "SEDOL", "SIN", "SIREN", "SIRET", "SSN",
         "VIN"
