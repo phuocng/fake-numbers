@@ -8,6 +8,7 @@
 
 import bic from './bic';
 import cnpj from './cnpj';
+import cpf from './cpf';
 import creditCard, { CreditCardType } from './creditCard';
 import cusip from './cusip';
 import cvv from './cvv';
@@ -31,7 +32,7 @@ import vin from './vin';
 
 export {
     bic,
-    cnpj, creditCard, CreditCardType, cusip, cvv,
+    cnpj, cpf, creditCard, CreditCardType, cusip, cvv,
     ean,
     imei, imo, isbn, IsbnType, isin, ismn, IsmnType, issn,
     nif, npi, nric,
