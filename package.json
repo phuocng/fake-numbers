@@ -19,6 +19,7 @@
         "NIF", "NPI", "NRIC",
         "RTN",
         "SEDOL", "SIN", "SIREN", "SIRET", "SSN",
+        "UID",
         "VIN"
     ],
     "repository": {
