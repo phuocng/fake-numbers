@@ -1,7 +1,7 @@
 # Fake Numbers
 Generate fake, valid numbers. Check if a given number is valid.
 
-![Fake Numbers](https://raw.githubusercontent.com/phuoc-ng/fake-numbers/master/assets/fakenumbers.png)
+![Fake Numbers](https://fakenumbers.io/assets/screenshot.png)
 
 ## Usage
 
