@@ -26,8 +26,8 @@ export interface FakeCheckWithType<F, C> {
 // -----------------
 // Supported numbers
 
-// BIC
 export const bic: DefaultFakeCheck;
+export const cnpj: DefaultFakeCheck;
 
 // Credit card
 export enum CreditCardType {
