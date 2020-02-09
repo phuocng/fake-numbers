@@ -1,7 +1,13 @@
 # Fake Numbers
 Generate fake, valid numbers. Check if a given number is valid.
 
+![Fake Numbers](https://raw.githubusercontent.com/phuoc-ng/fake-numbers/master/assets/fakenumbers.png)
+
+## Usage
+
 The following piece of code generates a fake, valid credit card number.
+
+1. Use the [@phuocng/fake-numbers](https://www.npmjs.com/package/@phuocng/fake-numbers) package
 
 ~~~ javascript
 import { creditCard } from '@phuocng/fake-numbers';
@@ -11,6 +17,20 @@ const creditCardNumber = creditCard.fake();
 
 // Check if a given value is a valid credit card nunber
 creditCard.check(creditCardNumber).valid;       // returns `true`
+~~~
+
+2. Use the umd package in the browser:
+
+~~~ html
+<script src="https://unpkg.com/@phuocng/fake-numbers@1.0.0/umd/fake-numbers.min.js"></script>
+
+<script>
+// Fake a credit card number
+const number = FakeNumbers.creditCard.fake();
+
+// Check a credit card number
+const isValid = FakeNumbers.creditCard.check('given number').valid;
+</script>
 ~~~
 
 ## Supported numbers
@@ -39,6 +59,9 @@ creditCard.check(creditCardNumber).valid;       // returns `true`
 * [x] 22. SIRET (_Système d’Identification du Répertoire des Établissements_)
 * [x] 23. SSN (_Social Security number_)
 * [x] 24. VIN (_Vehicle Identification Number_): Support US only
+
+## License
+Purchase a Commercial License at the [official website](https://fakenumbers.io)
 
 ## About
 
