@@ -17,6 +17,7 @@ import isbn, { IsbnType } from './isbn';
 import isin from './isin';
 import ismn, { IsmnType } from './ismn';
 import issn from './issn';
+import nif from './nif';
 import npi from './npi';
 import nric from './nric';
 import rtn from './rtn';
@@ -39,6 +40,7 @@ export {
     isin,
     ismn, IsmnType,
     issn,
+    nif,
     npi,
     nric,
     rtn,
