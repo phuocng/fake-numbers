@@ -1,7 +1,7 @@
 {
     "name": "@phuocng/fake-numbers",
     "version": "1.0.0",
-    "description": "Generate a fake and valid numbers",
+    "description": "Generate fake, valid numbers",
     "license": "https://fakenumbers.io/license",
     "author": {
         "name": "Nguyen Huu Phuoc",
@@ -18,7 +18,7 @@
         "IMEI", "IMO", "ISBN", "ISMN", "ISSN",
         "NPI", "NRIC",
         "RTN",
-        "SEDOL", "SIN", "SSN",
+        "SEDOL", "SIN", "SIREN", "SSN",
         "VIN"
     ],
     "repository": {

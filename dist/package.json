@@ -1,7 +1,7 @@
 {
     "name": "@phuocng/fake-numbers",
     "version": "1.0.0",
-    "description": "Generate a fake and valid numbers",
+    "description": "Generate fake, valid numbers",
     "license": "https://fakenumbers.io/license",
     "author": {
         "name": "Nguyen Huu Phuoc",
@@ -11,7 +11,25 @@
     "homepage": "https://fakenumbers.io",
     "keywords": [
         "fake number",
-        "random number"
+        "random number",
+        "BIC",
+        "Credit card number",
+        "CUSIP",
+        "CVV",
+        "EAN",
+        "IMEI",
+        "IMO",
+        "ISBN",
+        "ISMN",
+        "ISSN",
+        "NPI",
+        "NRIC",
+        "RTN",
+        "SEDOL",
+        "SIN",
+        "SIREN",
+        "SSN",
+        "VIN"
     ],
     "repository": {
         "type": "git",
@@ -25,7 +43,10 @@
         "umd/",
         "index.d.ts",
         "index.js",
+        "LICENSE.md",
         "README.md"
     ],
-    "main": "index.js"
+    "main": "index.js",
+    "dependencies": {},
+    "devDependencies": {}
 }
