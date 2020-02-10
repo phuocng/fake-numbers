@@ -18,7 +18,7 @@
         "IMEI", "IMO", "ISBN", "ISMN", "ISSN",
         "NIF", "NPI", "NRIC",
         "RTN",
-        "SEDOL", "SIN", "SIREN", "SIRET", "SSN",
+        "SEDOL", "SIN", "SIREN", "SIRET", "SSN", "SVNR",
         "UID",
         "VIN"
     ],

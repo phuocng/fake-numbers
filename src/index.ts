@@ -29,6 +29,7 @@ import sin from './sin';
 import siren from './siren';
 import siret from './siret';
 import ssn from './ssn';
+import svnr from './svnr';
 import uid from './uid';
 import vin from './vin';
 
@@ -39,7 +40,7 @@ export {
     imei, imo, isbn, IsbnType, isin, ismn, IsmnType, issn,
     nif, npi, nric,
     rtn,
-    sedol, sin, siren, siret, ssn,
+    sedol, sin, siren, siret, ssn, svnr,
     uid,
     vin,
 };
