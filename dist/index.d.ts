@@ -82,5 +82,6 @@ export const sin: DefaultFakeCheck;
 export const siren: DefaultFakeCheck;
 export const siret: DefaultFakeCheck;
 export const ssn: DefaultFakeCheck;
+export const svnr: DefaultFakeCheck;
 export const uid: DefaultFakeCheck;
 export const vin: DefaultFakeCheck;
