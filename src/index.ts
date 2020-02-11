@@ -6,6 +6,7 @@
  * @copyright 2020 Nguyen Huu Phuoc <me@phuoc.ng>
  */
 
+import abn from './abn';
 import bic from './bic';
 import btw from './btw';
 import cnpj from './cnpj';
@@ -34,6 +35,7 @@ import uid from './uid';
 import vin from './vin';
 
 export {
+    abn,
     bic, btw,
     cnpj, cpf, creditCard, CreditCardType, cusip, cvv,
     ean,
