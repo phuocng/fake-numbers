@@ -26,6 +26,7 @@ export interface FakeCheckWithType<F, C> {
 // -----------------
 // Supported numbers
 
+export const abn: DefaultFakeCheck;
 export const bic: DefaultFakeCheck;
 export const btw: DefaultFakeCheck;
 export const cnpj: DefaultFakeCheck;
