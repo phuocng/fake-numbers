@@ -11,14 +11,14 @@ import checkDigits from './checkDigits';
 
 const check = (input: string): CheckResult<{}> => {
     const value = input.replace(/\s/g, '');
-    if (!/^\d{8,9}$/.test(value)) {
+    if (!/^\d{9}$/.test(value)) {
         return { valid: false };
     }
 
     const digits = value.split('').map((c) => parseInt(c, 10));
-    const first = digits.shift();
+    const lastDigit = digits.pop();
 
-    return { valid: first === checkDigits(digits) };
-};
+    return { valid: lastDigit === checkDigits(digits) };
+}
 
 export default check;

@@ -7,6 +7,7 @@
  */
 
 import abn from './abn';
+import acn from './acn';
 import bic from './bic';
 import btw from './btw';
 import cnpj from './cnpj';
@@ -36,7 +37,7 @@ import uid from './uid';
 import vin from './vin';
 
 export {
-    abn,
+    abn, acn,
     bic, btw,
     cnpj, cpf, creditCard, CreditCardType, cusip, cvv,
     ean,
