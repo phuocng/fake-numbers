@@ -35,7 +35,7 @@ describe('ABN number', () => {
         ].forEach((n) => expect(abn.check(n).valid).to.be.true);
     });
 
-    it('Valid ABN number with spaces', () => {
+    it('Valid ABN numbers with spaces', () => {
         [
             '70 548 178 358',
             '25   051   470   610',
