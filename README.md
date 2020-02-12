@@ -60,8 +60,9 @@ const isValid = FakeNumbers.creditCard.check('given number').valid;
 * [x] 23. SIRET (_Système d’Identification du Répertoire des Établissements_)
 * [x] 24. SSN (_Social Security number_)
 * [x] 25. SVNR: Austrian social insurance number
-* [x] 26. UID (_Umsatzsteuer-Identifikationsnummer_): Austrian VAT number
-* [x] 27. VIN (_Vehicle Identification Number_): Support US only
+* [x] 26. TFN: Australian Tax File Number
+* [x] 27. UID (_Umsatzsteuer-Identifikationsnummer_): Austrian VAT number
+* [x] 28. VIN (_Vehicle Identification Number_): Support US only
 
 ## License
 Purchase a Commercial License at the [official website](https://fakenumbers.io)

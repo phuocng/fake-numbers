@@ -31,6 +31,7 @@ import siren from './siren';
 import siret from './siret';
 import ssn from './ssn';
 import svnr from './svnr';
+import tfn from './tfn';
 import uid from './uid';
 import vin from './vin';
 
@@ -43,6 +44,7 @@ export {
     nif, npi, nric,
     rtn,
     sedol, sin, siren, siret, ssn, svnr,
+    tfn,
     uid,
     vin,
 };
