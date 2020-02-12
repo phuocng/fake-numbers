@@ -9,6 +9,8 @@
 import randomFromArray from '../utils/randomFromArray';
 import randomNumbers from '../utils/randomNumbers';
 
+import checkDigits from './checkDigits';
+
 /**
  * Generate a random TFN (Australian Tax File Number)
  *
@@ -19,11 +21,10 @@ import randomNumbers from '../utils/randomNumbers';
 const fake = (): string => {
     const length = randomFromArray([7, 8]);
     const partial = randomNumbers(length);
-    const weight = [4, 3, 7, 5, 8, 6, 9, 10];
-    const sum = partial.map((v, i) => v * weight[i]).reduce((a, b) => a + b, 0);
 
-    const first = (Math.floor(sum / 11) + 1) * 11 - sum;
+    const first = checkDigits(partial);
     const output = `${first}${partial.join('')}`;
+
     return `${output.substr(0, 3)} ${output.substr(3, 3)} ${output.substr(6)}`;
 };
 

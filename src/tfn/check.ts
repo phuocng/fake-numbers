@@ -7,6 +7,7 @@
  */
 
 import CheckResult from '../CheckResult';
+import checkDigits from './checkDigits';
 
 const check = (input: string): CheckResult<{}> => {
     const value = input.replace(/\s/g, '');
@@ -14,10 +15,10 @@ const check = (input: string): CheckResult<{}> => {
         return { valid: false };
     }
 
-    const weight = [1, 4, 3, 7, 5, 8, 6, 9, 10];
-    const sum = value.split('').map((c, i) => parseInt(c, 10) * weight[i]).reduce((a, b) => a + b, 0);
+    const digits = value.split('').map((c) => parseInt(c, 10));
+    const first = digits.shift();
 
-    return { valid: sum % 11 === 0 };
+    return { valid: first === checkDigits(digits) };
 };
 
 export default check;
