@@ -18,9 +18,9 @@ import randomNumbers from '../utils/randomNumbers';
 const fake = (): string => {
     const partial = randomNumbers(7);
     const checkDigit = luhn(partial, DoublePosition.Old);
-    const reminder = (checkDigit + 6) % 10;
+    const remainder = (checkDigit + 6) % 10;
 
-    return `U${partial.join('')}${reminder}`;
+    return `U${partial.join('')}${remainder}`;
 };
 
 export default fake;

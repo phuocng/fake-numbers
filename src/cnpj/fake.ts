@@ -17,8 +17,8 @@ import randomNumbers from '../utils/randomNumbers';
 const fake = (): string => {
     const calculateCheckDigit = (arr: number[], weight: number[]) => {
         const sum = arr.map((v, i) => v * weight[i]).reduce((a, b) => a + b, 0);
-        const reminder = sum % 11;
-        return (reminder < 2) ? 0 : 11 - reminder;
+        const remainder = sum % 11;
+        return (remainder < 2) ? 0 : 11 - remainder;
     };
 
     const partial = randomNumbers(12);

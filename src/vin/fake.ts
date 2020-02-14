@@ -22,8 +22,8 @@ const fake = (): string => {
 
     const generated = `${randomString(8, charsSet)}${randomString(1, `${Digits}X`)}${randomString(8, charsSet)}`;
     const sum = generated.split('').map((c, index) => Chars[c] * Weights[index]).reduce((a, b) => a + b, 0);
-    const reminder = sum % 11;
-    const checkCharacter = reminder === 10 ? 'X' : `${reminder}`;
+    const remainder = sum % 11;
+    const checkCharacter = remainder === 10 ? 'X' : `${remainder}`;
 
     return `${generated.substr(0, 8)}${checkCharacter}${generated.substr(9)}`;
 };

@@ -30,8 +30,8 @@ const fake = (type?: IsbnType): string => {
 const fakeIsbn10 = (): string => {
     const partial = randomNumbers(9);
     const sum = partial.map((v, index) => v * (index + 1)).reduce((a, b) => a + b, 0);
-    const reminder = sum % 11;
-    const check = reminder === 10 ? 'X' : `${reminder}`;
+    const remainder = sum % 11;
+    const check = remainder === 10 ? 'X' : `${remainder}`;
 
     return `${partial.join('')}${check}`;
 };

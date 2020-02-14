@@ -24,9 +24,9 @@ const check = (input: string): CheckResult<{}> => {
     const sum = digits.split('').map((c, i) => parseInt(c, 10) * weight[i]).reduce((a, b) => a + b, 0);
 
     const finalSum = (first === 'T' || first === 'G') ? sum + 4 : sum;
-    const reminder = finalSum % 11;
+    const remainder = finalSum % 11;
 
-    const checkChar = (first === 'S' || first === 'T') ? citizenCheck[reminder] : foreignerCheck[reminder];
+    const checkChar = (first === 'S' || first === 'T') ? citizenCheck[remainder] : foreignerCheck[remainder];
 
     return { valid: checkChar === lastChar };
 };

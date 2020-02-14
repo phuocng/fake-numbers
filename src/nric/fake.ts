@@ -29,9 +29,9 @@ const fake = (): string => {
     const sum = partial.map((v, i) => v * weight[i]).reduce((a, b) => a + b, 0);
 
     const finalSum = (first === 'T' || first === 'G') ? sum + 4 : sum;
-    const reminder = finalSum % 11;
+    const remainder = finalSum % 11;
 
-    const checkChar = (first === 'S' || first === 'T') ? citizenCheck[reminder] : foreignerCheck[reminder];
+    const checkChar = (first === 'S' || first === 'T') ? citizenCheck[remainder] : foreignerCheck[remainder];
 
     return `${first}${partial.join('')}${checkChar}`;
 };
