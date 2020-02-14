@@ -37,33 +37,34 @@ const isValid = FakeNumbers.creditCard.check('given number').valid;
 
 * [x] 01. ABN (_Australian Business Number_)
 * [x] 02. ACN (_Australian Company Number_)
-* [x] 03. BIC (_Business Identifier Code_)
-* [x] 04. BTW: Belgian VAT number
-* [x] 05. CNPJ (_Cadastro Nacional da Pessoa Jurídica_): Brazilian company identifier
-* [x] 06. CPF (_Cadastro de Pessoas Físicas_): Brazilian identification number
-* [x] 07. Credit card number
-* [x] 08. CUSIP (_Committee on Uniform Security Identification Procedures_)
-* [x] 09. CVV (_Card Verification Value_)
-* [x] 10. EAN (_International Article Number_)
-* [x] 11. IMEI (_International Mobile Equipment Identity_)
-* [x] 12. IMO (_International Maritime Organization_)
-* [x] 13. ISBN (_International Standard Book Number_)
-* [x] 14. ISIN (_International Securities Identification Number_)
-* [x] 15. ISMN (_International Standard Music Number_)
-* [x] 16. ISSN (_International Standard Serial Number_)
-* [x] 17. NIF (_Numéro d'Immatriculation Fiscale_): French tax identification number
-* [x] 18. NPI (_National Provider Identifier_)
-* [x] 19. NRIC (_Singaporean National Registration Identity Card_)
-* [x] 20. RTN (_Routing Transit Number_)
-* [x] 21. SEDOL (_Stock Exchange Daily Official List_)
-* [x] 22. SIN (_Canadian Social Insurance Number_)
-* [x] 23. SIREN
-* [x] 24. SIRET (_Système d’Identification du Répertoire des Établissements_)
-* [x] 25. SSN (_Social Security number_)
-* [x] 26. SVNR: Austrian social insurance number
-* [x] 27. TFN: Australian Tax File Number
-* [x] 28. UID (_Umsatzsteuer-Identifikationsnummer_): Austrian VAT number
-* [x] 29. VIN (_Vehicle Identification Number_): Support US only
+* [x] 03. ALV (_Arvonlisäveronumero_): Finnish VAT number
+* [x] 04. BIC (_Business Identifier Code_)
+* [x] 05. BTW: Belgian VAT number
+* [x] 06. CNPJ (_Cadastro Nacional da Pessoa Jurídica_): Brazilian company identifier
+* [x] 07. CPF (_Cadastro de Pessoas Físicas_): Brazilian identification number
+* [x] 08. Credit card number
+* [x] 09. CUSIP (_Committee on Uniform Security Identification Procedures_)
+* [x] 10. CVV (_Card Verification Value_)
+* [x] 11. EAN (_International Article Number_)
+* [x] 12. IMEI (_International Mobile Equipment Identity_)
+* [x] 13. IMO (_International Maritime Organization_)
+* [x] 14. ISBN (_International Standard Book Number_)
+* [x] 15. ISIN (_International Securities Identification Number_)
+* [x] 16. ISMN (_International Standard Music Number_)
+* [x] 17. ISSN (_International Standard Serial Number_)
+* [x] 18. NIF (_Numéro d'Immatriculation Fiscale_): French tax identification number
+* [x] 19. NPI (_National Provider Identifier_)
+* [x] 20. NRIC (_Singaporean National Registration Identity Card_)
+* [x] 21. RTN (_Routing Transit Number_)
+* [x] 22. SEDOL (_Stock Exchange Daily Official List_)
+* [x] 23. SIN (_Canadian Social Insurance Number_)
+* [x] 24. SIREN
+* [x] 25. SIRET (_Système d’Identification du Répertoire des Établissements_)
+* [x] 26. SSN (_Social Security number_)
+* [x] 27. SVNR: Austrian social insurance number
+* [x] 28. TFN: Australian Tax File Number
+* [x] 29. UID (_Umsatzsteuer-Identifikationsnummer_): Austrian VAT number
+* [x] 30. VIN (_Vehicle Identification Number_): Support US only
 
 ## License
 Purchase a Commercial License at the [official website](https://fakenumbers.io)
