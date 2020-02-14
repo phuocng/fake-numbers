@@ -16,8 +16,8 @@ import randomNumbers from '../utils/randomNumbers';
  */
 const fake = (): string => {
     const calculateCheckDigit = (sum: number) => {
-        const reminder = sum % 11;
-        return (reminder < 2) ? 0 : 11 - reminder;
+        const remainder = sum % 11;
+        return (remainder < 2) ? 0 : 11 - remainder;
     };
 
     const partial = randomNumbers(9);

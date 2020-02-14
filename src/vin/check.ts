@@ -17,12 +17,12 @@ const check = (input: string): CheckResult<{}> => {
 
     const v = input.toUpperCase();
     const sum = v.split('').map((c, i) => Chars[c] * Weights[i]).reduce((a, b) => a + b, 0);
-    let reminder = `${sum % 11}`;
-    if (reminder === '10') {
-        reminder = 'X';
+    let remainder = `${sum % 11}`;
+    if (remainder === '10') {
+        remainder = 'X';
     }
 
-    return { valid: reminder === v.charAt(8) };
+    return { valid: remainder === v.charAt(8) };
 };
 
 export default check;

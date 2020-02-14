@@ -20,8 +20,8 @@ const fake = (): string => {
     const partial = first.concat(second);
 
     const sum = partial.map((v, i) => v * (8 - i)).reduce((a, b) => a + b, 0);
-    const reminder = (11 - sum % 11) % 11
-    const check = reminder === 10 ? 'X' : `${reminder}`;
+    const remainder = (11 - sum % 11) % 11
+    const check = remainder === 10 ? 'X' : `${remainder}`;
 
     return `${first.join('')}-${second.join('')}${check}`;
 };

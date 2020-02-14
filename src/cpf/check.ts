@@ -18,8 +18,8 @@ const check = (input: string): CheckResult<{}> => {
     const digits = formatted.split('').map((c) => parseInt(c, 10));
 
     const calculateCheckDigit = (sum: number) => {
-        const reminder = sum % 11;
-        return (reminder < 2) ? 0 : 11 - reminder;
+        const remainder = sum % 11;
+        return (remainder < 2) ? 0 : 11 - remainder;
     };
 
     // Determine the first check digit
