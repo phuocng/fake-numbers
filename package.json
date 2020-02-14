@@ -21,6 +21,7 @@
         "CPF", "Brazilian identification number",
         "Credit card number",
         "CUSIP", "Committee on Uniform Security Identification Procedures",
+        "CVR", "Danish VAT number",
         "CVV", "Card Verification Value",
         "EAN", "International Article Number",
         "IMEI", "International Mobile Equipment Identity",

@@ -55,6 +55,7 @@ export enum CreditCardType {
 export const creditCard: FakeCheckWithType<CreditCardType, CreditCardType[]>;
 
 export const cusip: DefaultFakeCheck;
+export const cvr: DefaultFakeCheck;
 export const cvv: DefaultFakeCheck;
 export const ean: DefaultFakeCheck;
 export const imei: DefaultFakeCheck;
