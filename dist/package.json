@@ -34,6 +34,7 @@
         "NIF", "French tax identification number",
         "NPI", "National Provider Identifier",
         "NRIC", "Singaporean National Registration Identity Card",
+        "PVM", "Lithuanian VAT number",
         "RIF", "Venezuelan VAT number",
         "RTN", "Routing Transit Number",
         "SEDOL", "Stock Exchange Daily Official List",

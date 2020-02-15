@@ -57,17 +57,18 @@ const isValid = FakeNumbers.creditCard.check('given number').valid;
 * [x] 20. NIF (_Numéro d'Immatriculation Fiscale_): French tax identification number
 * [x] 21. NPI (_National Provider Identifier_)
 * [x] 22. NRIC (_Singaporean National Registration Identity Card_)
-* [x] 23. RIF (_Registro de Identificación Fiscal_): Venezuelan VAT number
-* [x] 24. RTN (_Routing Transit Number_)
-* [x] 25. SEDOL (_Stock Exchange Daily Official List_)
-* [x] 26. SIN (_Canadian Social Insurance Number_)
-* [x] 27. SIREN
-* [x] 28. SIRET (_Système d’Identification du Répertoire des Établissements_)
-* [x] 29. SSN (_Social Security number_)
-* [x] 30. SVNR: Austrian social insurance number
-* [x] 31. TFN: Australian Tax File Number
-* [x] 32. UID (_Umsatzsteuer-Identifikationsnummer_): Austrian VAT number
-* [x] 33. VIN (_Vehicle Identification Number_): Support US only
+* [x] 23. PVM: Lithuanian VAT number
+* [x] 24. RIF (_Registro de Identificación Fiscal_): Venezuelan VAT number
+* [x] 25. RTN (_Routing Transit Number_)
+* [x] 26. SEDOL (_Stock Exchange Daily Official List_)
+* [x] 27. SIN (_Canadian Social Insurance Number_)
+* [x] 28. SIREN
+* [x] 29. SIRET (_Système d’Identification du Répertoire des Établissements_)
+* [x] 30. SSN (_Social Security number_)
+* [x] 31. SVNR: Austrian social insurance number
+* [x] 32. TFN: Australian Tax File Number
+* [x] 33. UID (_Umsatzsteuer-Identifikationsnummer_): Austrian VAT number
+* [x] 34. VIN (_Vehicle Identification Number_): Support US only
 
 ## License
 Purchase a Commercial License at the [official website](https://fakenumbers.io)
