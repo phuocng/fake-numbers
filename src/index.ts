@@ -28,6 +28,7 @@ import issn from './issn';
 import nif from './nif';
 import npi from './npi';
 import nric from './nric';
+import pvm from './pvm';
 import rif, { RifCompanyType } from './rif';
 import rtn from './rtn';
 import sedol from './sedol';
@@ -63,6 +64,7 @@ export {
     nif,
     npi,
     nric,
+    pvm,
     rif, RifCompanyType,
     rtn,
     sedol,
