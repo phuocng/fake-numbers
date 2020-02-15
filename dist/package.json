@@ -44,6 +44,7 @@
         "SSN", "Social Security Number",
         "SVNR", "Austrian social insurance number",
         "TFN", "Australian Tax File Number",
+        "TRN", "South African Tax Reference Number",
         "UID", "Austrian VAT number",
         "VIN", "Vehicle Identification Number",
         "VKN", "Turkish tax identification number"
