@@ -7,7 +7,10 @@
  */
 
 // Test the type definitions
-import { creditCard, CreditCardType } from './index.d';
+import { isbn, IsbnType } from './index.d';
 
-const creditCardNumber = creditCard.fake(CreditCardType.AmericanExpress);
-const valid = creditCard.check(creditCardNumber).valid;
+const number = isbn.fake(IsbnType.Isbn10);
+
+const result = isbn.check(number);
+const isValid = result.valid;
+const cardType = result.meta?.type;

@@ -67,7 +67,7 @@ export enum IsbnType {
     Isbn10 = 'Isbn10',
     Isbn13 = 'Isbn13',
 }
-export const isbn: FakeCheckWithType<IsbnType, {}>;
+export const isbn: FakeCheckWithType<IsbnType, { type: IsbnType }>;
 
 export const isin: DefaultFakeCheck;
 
@@ -75,7 +75,7 @@ export enum IsmnType {
     Ismn10 = 'Ismn10',
     Ismn13 = 'Ismn13',
 }
-export const ismn: FakeCheckWithType<IsmnType, {}>;
+export const ismn: FakeCheckWithType<IsmnType, { type: IsmnType }>;
 
 export const issn: DefaultFakeCheck;
 export const nif: DefaultFakeCheck;
@@ -89,7 +89,7 @@ export enum RifCompanyType {
     Passport = 'P',
     Government = 'G',
 }
-export const rif: FakeCheckWithType<RifCompanyType, {}>;
+export const rif: FakeCheckWithType<RifCompanyType, { type: RifCompanyType }>;
 
 export const rtn: DefaultFakeCheck;
 export const sedol: DefaultFakeCheck;
