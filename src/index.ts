@@ -28,6 +28,7 @@ import issn from './issn';
 import nif from './nif';
 import npi from './npi';
 import nric from './nric';
+import rif, { RifCompanyType } from './rif';
 import rtn from './rtn';
 import sedol from './sedol';
 import sin from './sin';
@@ -40,15 +41,36 @@ import uid from './uid';
 import vin from './vin';
 
 export {
-    abn, acn, alv,
-    bic, btw,
-    cnpj, cpf, creditCard, CreditCardType, cusip, cvr, cvv,
+    abn,
+    acn,
+    alv,
+    bic,
+    btw,
+    cnpj,
+    cpf,
+    creditCard, CreditCardType,
+    cusip,
+    cvr,
+    cvv,
     ddv,
     ean,
-    imei, imo, isbn, IsbnType, isin, ismn, IsmnType, issn,
-    nif, npi, nric,
+    imei,
+    imo,
+    isbn, IsbnType,
+    isin,
+    ismn, IsmnType,
+    issn,
+    nif,
+    npi,
+    nric,
+    rif, RifCompanyType,
     rtn,
-    sedol, sin, siren, siret, ssn, svnr,
+    sedol,
+    sin,
+    siren,
+    siret,
+    ssn,
+    svnr,
     tfn,
     uid,
     vin,

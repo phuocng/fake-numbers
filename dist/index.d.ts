@@ -81,6 +81,16 @@ export const issn: DefaultFakeCheck;
 export const nif: DefaultFakeCheck;
 export const npi: DefaultFakeCheck;
 export const nric: DefaultFakeCheck;
+
+export enum RifCompanyType {
+    CitizenPerson = 'V',
+    ForeignPerson = 'E',
+    Company = 'J',
+    Passport = 'P',
+    Government = 'G',
+}
+export const rif: FakeCheckWithType<RifCompanyType, {}>;
+
 export const rtn: DefaultFakeCheck;
 export const sedol: DefaultFakeCheck;
 export const sin: DefaultFakeCheck;
