@@ -38,6 +38,7 @@ import siret from './siret';
 import ssn from './ssn';
 import svnr from './svnr';
 import tfn from './tfn';
+import trn from './trn';
 import uid from './uid';
 import vin from './vin';
 import vkn from './vkn';
@@ -75,6 +76,7 @@ export {
     ssn,
     svnr,
     tfn,
+    trn,
     uid,
     vin,
     vkn,
