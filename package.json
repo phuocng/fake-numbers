@@ -23,6 +23,7 @@
         "CUSIP", "Committee on Uniform Security Identification Procedures",
         "CVR", "Danish VAT number",
         "CVV", "Card Verification Value",
+        "DDV", "Slovenian VAT number",
         "EAN", "International Article Number",
         "IMEI", "International Mobile Equipment Identity",
         "IMO", "International Maritime Organization",

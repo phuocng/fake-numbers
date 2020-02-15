@@ -17,6 +17,7 @@ import creditCard, { CreditCardType } from './creditCard';
 import cusip from './cusip';
 import cvr from './cvr';
 import cvv from './cvv';
+import ddv from './ddv';
 import ean from './ean';
 import imei from './imei';
 import imo from './imo';
@@ -42,6 +43,7 @@ export {
     abn, acn, alv,
     bic, btw,
     cnpj, cpf, creditCard, CreditCardType, cusip, cvr, cvv,
+    ddv,
     ean,
     imei, imo, isbn, IsbnType, isin, ismn, IsmnType, issn,
     nif, npi, nric,
