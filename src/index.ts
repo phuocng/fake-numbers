@@ -40,6 +40,7 @@ import svnr from './svnr';
 import tfn from './tfn';
 import uid from './uid';
 import vin from './vin';
+import vkn from './vkn';
 
 export {
     abn,
@@ -76,4 +77,5 @@ export {
     tfn,
     uid,
     vin,
+    vkn,
 };

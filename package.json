@@ -45,7 +45,8 @@
         "SVNR", "Austrian social insurance number",
         "TFN", "Australian Tax File Number",
         "UID", "Austrian VAT number",
-        "VIN", "Vehicle Identification Number"
+        "VIN", "Vehicle Identification Number",
+        "VKN", "Turkish tax identification number"
     ],
     "repository": {
         "type": "git",

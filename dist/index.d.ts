@@ -102,3 +102,4 @@ export const svnr: DefaultFakeCheck;
 export const tfn: DefaultFakeCheck;
 export const uid: DefaultFakeCheck;
 export const vin: DefaultFakeCheck;
+export const vkn: DefaultFakeCheck;
