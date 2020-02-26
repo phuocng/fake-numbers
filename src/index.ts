@@ -21,6 +21,7 @@ import cvr from './cvr';
 import cvv from './cvv';
 import ddv from './ddv';
 import ean from './ean';
+import fpa from './fpa';
 import imei from './imei';
 import imo from './imo';
 import isbn, { IsbnType } from './isbn';
@@ -61,6 +62,7 @@ export {
     cvv,
     ddv,
     ean,
+    fpa,
     imei,
     imo,
     isbn, IsbnType,
