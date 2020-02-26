@@ -31,6 +31,7 @@ export const acn: DefaultFakeCheck;
 export const alv: DefaultFakeCheck;
 export const anum: DefaultFakeCheck;
 export const bic: DefaultFakeCheck;
+export const bn: DefaultFakeCheck;
 export const btw: DefaultFakeCheck;
 export const cnpj: DefaultFakeCheck;
 export const cpf: DefaultFakeCheck;

@@ -17,6 +17,7 @@
         "ALV", "Finnish VAT number",
         "ANUM", "Hungarian VAT number",
         "BIC", "Business Identifier Code",
+        "BN", "Canadian Business Number",
         "BTW", "Belgian VAT number",
         "CNPJ", "Brazilian company identifier",
         "CPF", "Brazilian identification number",
