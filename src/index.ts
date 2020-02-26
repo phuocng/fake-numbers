@@ -11,6 +11,7 @@ import acn from './acn';
 import alv from './alv';
 import anum from './anum';
 import bic from './bic';
+import bn from './bn';
 import btw from './btw';
 import cnpj from './cnpj';
 import cpf from './cpf';
@@ -50,6 +51,7 @@ export {
     alv,
     anum,
     bic,
+    bn,
     btw,
     cnpj,
     cpf,
