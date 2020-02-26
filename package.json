@@ -27,6 +27,7 @@
         "CVV", "Card Verification Value",
         "DDV", "Slovenian VAT number",
         "EAN", "International Article Number",
+        "FPA", "Greek VAT number",
         "IMEI", "International Mobile Equipment Identity",
         "IMO", "International Maritime Organization",
         "ISBN", "International Standard Book Number",
