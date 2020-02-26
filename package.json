@@ -15,6 +15,7 @@
         "ABN", "Australian Business Number",
         "ACN", "Australian Company Number",
         "ALV", "Finnish VAT number",
+        "ANUM", "Hungarian VAT number",
         "BIC", "Business Identifier Code",
         "BTW", "Belgian VAT number",
         "CNPJ", "Brazilian company identifier",
