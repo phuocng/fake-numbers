@@ -9,6 +9,7 @@
 import abn from './abn';
 import acn from './acn';
 import alv from './alv';
+import anum from './anum';
 import bic from './bic';
 import btw from './btw';
 import cnpj from './cnpj';
@@ -47,6 +48,7 @@ export {
     abn,
     acn,
     alv,
+    anum,
     bic,
     btw,
     cnpj,
