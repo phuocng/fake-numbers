@@ -11,20 +11,43 @@ import { expect } from 'chai';
 import { iban } from '../src';
 
 describe('IBAN number', () => {
-    // it('Fake IBAN number', () => {
-    //     const number = iban.fake();
-    //     const result = iban.check(number);
-    //     expect(result.valid).to.be.true;
-    // });
+    it('Fake IBAN number', () => {
+        const number = iban.fake();
+        const result = iban.check(number);
+        expect(result.valid).to.be.true;
+    });
 
-    // it('Invalid IBAN numbers', () => {
-    //     [
-    //         '1572860',      // Invalid length
-    //         '1572860A',     // Has invalid character (A)
-    //         '07375463',     // Invalid check digits
-    //         '165731710',    // remainder = 10
-    //     ].forEach((n) => expect(iban.check(n).valid).to.be.false);
-    // });
+    it('Fake IBAN number in given country', () => {
+        const supportedCountries = [
+            'AD', 'AE', 'AL', 'AO', 'AT', 'AZ',
+            'BA', 'BE', 'BF', 'BG', 'BH', 'BI', 'BJ', 'BR',
+            'CH', 'CI', 'CM', 'CR', 'CV', 'CY', 'CZ',
+            'DE', 'DK', 'DO', 'DZ',
+            'EE', 'ES',
+            'FI', 'FO', 'FR',
+            'GB', 'GE', 'GI', 'GL', 'GR', 'GT',
+            'HR', 'HU',
+            'IE', 'IL', 'IR', 'IS', 'IT',
+            'JO',
+            'KW', 'KZ',
+            'LB', 'LI', 'LT', 'LU', 'LV',
+            'MC', 'MD', 'ME', 'MG', 'MK', 'ML', 'MR', 'MT', 'MU', 'MZ',
+            'NL', 'NO',
+            'PK', 'PL', 'PS', 'PT',
+            'QA',
+            'RO', 'RS',
+            'SA', 'SE', 'SI', 'SK', 'SM', 'SN',
+            'TL', 'TN', 'TR',
+            'VG',
+            'XK',
+        ];
+
+        supportedCountries.forEach((country) => {
+            const number = iban.fake(country);
+            const result = iban.check(number);
+            expect(result.valid).to.be.true;
+        });
+    });
 
     it('Valid IBAN numbers', () => {
         [
@@ -111,10 +134,4 @@ describe('IBAN number', () => {
             'VG96VPVG0000012345678901',
         ].forEach((n) => expect(iban.check(n).valid).to.be.true);
     });
-
-    // it('Invalid IBAN numbers', () => {
-    //     [
-    //         '',
-    //     ].forEach((n) => expect(iban.check(n).valid).to.be.false);
-    // });
 });
