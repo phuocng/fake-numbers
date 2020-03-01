@@ -31,6 +31,6 @@ const check = (input: string): CheckResult<{}> => {
     }
 
     return { valid: remainder === lastDigit };
-}
+};
 
 export default check;

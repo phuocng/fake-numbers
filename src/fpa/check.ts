@@ -23,6 +23,6 @@ const check = (input: string): CheckResult<{}> => {
     const cd = checkDigit(digits);
 
     return { valid: `${cd}` === value.substr(8, 1) };
-}
+};
 
 export default check;
