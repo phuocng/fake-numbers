@@ -62,7 +62,13 @@ export const cvv: DefaultFakeCheck;
 export const ddv: DefaultFakeCheck;
 export const ean: DefaultFakeCheck;
 export const fpa: DefaultFakeCheck;
-export const iban: DefaultFakeCheck;
+
+export interface FakeCheckIban {
+    fake(country?: string): string;
+    check(input: string): CheckResult<{}>;
+}
+export const iban: FakeCheckIban;
+
 export const imei: DefaultFakeCheck;
 export const imo: DefaultFakeCheck;
 
