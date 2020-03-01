@@ -21,6 +21,6 @@ const check = (input: string): CheckResult<{}> => {
     const lastDigit = digits.pop();
 
     return { valid: lastDigit === luhn(digits, DoublePosition.Even) };
-}
+};
 
 export default check;

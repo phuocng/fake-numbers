@@ -19,6 +19,6 @@ const check = (input: string): CheckResult<{}> => {
     const remainder = checkDigits(digits);
 
     return { valid: `${remainder}` === value.substr(0, 2) };
-}
+};
 
 export default check;

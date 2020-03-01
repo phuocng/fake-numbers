@@ -23,6 +23,6 @@ const check = (input: string): CheckResult<{}> => {
     const lastDigit = digits.pop();
 
     return { valid: lastDigit === checkDigits(digits) };
-}
+};
 
 export default check;

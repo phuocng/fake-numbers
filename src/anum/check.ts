@@ -22,6 +22,6 @@ const check = (input: string): CheckResult<{}> => {
     const sum = digits.map((v, i) => v * weight[i]).reduce((a, b) => a + b, 0);
 
     return { valid: sum % 10 === 0 };
-}
+};
 
 export default check;

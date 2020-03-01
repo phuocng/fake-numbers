@@ -33,6 +33,6 @@ const check = (input: string): CheckResult<Result> => {
         meta: { type },
         valid: lastDigit === checkDigits(type, digits),
     };
-}
+};
 
 export default check;

@@ -19,6 +19,6 @@ const check = (input: string): CheckResult<{}> => {
     const sum = parseInt(prefix.substr(0, 8), 10) + parseInt(prefix.substr(8, 2), 10);
 
     return { valid: sum % 97 === 0 };
-}
+};
 
 export default check;
