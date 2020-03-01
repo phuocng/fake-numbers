@@ -28,6 +28,7 @@
         "DDV", "Slovenian VAT number",
         "EAN", "International Article Number",
         "FPA", "Greek VAT number",
+        "IBAN", "International Bank Account Number",
         "IMEI", "International Mobile Equipment Identity",
         "IMO", "International Maritime Organization",
         "ISBN", "International Standard Book Number",

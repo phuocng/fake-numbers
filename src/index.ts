@@ -22,6 +22,7 @@ import cvv from './cvv';
 import ddv from './ddv';
 import ean from './ean';
 import fpa from './fpa';
+import iban from './iban';
 import imei from './imei';
 import imo from './imo';
 import isbn, { IsbnType } from './isbn';
@@ -63,6 +64,7 @@ export {
     ddv,
     ean,
     fpa,
+    iban,
     imei,
     imo,
     isbn, IsbnType,
